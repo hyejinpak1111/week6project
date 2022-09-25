@@ -1,0 +1,15 @@
+{% extends './partials/layout.html' %}
+
+{% block content %}
+<h2>Your Pokémons look healthy! Would you like to learn more about them? </h2>
+{% for pokemon in all_pokemon %}
+<div class="card mb-2">
+    <div class="card-header">
+        <a class="mx-5" href="{{  url_for('main.captured', id=pokemon['id']) }}"> {{pokemon['name']}} </a>
+    </div>
+ </div>
+ 
+
+{% endfor %}
+
+{% endblock content %}

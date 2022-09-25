@@ -1,0 +1,15 @@
+{% extends './partials/layout.html' %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header">
+      {{ captured['name'] }} has been succesffully captured!
+    </div>
+    <div class="card-body">     
+      <p class="normal">Description- {{ captured['description'] }} </p>
+   </div>
+   <div class="card-footer">
+      <p class="normal"> Type- {{ captured['type'] }}</p>
+   </div>
+</div>
+{% endblock content %}
